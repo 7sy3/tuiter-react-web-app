@@ -1,0 +1,49 @@
+* {
+    background-color: black;
+    color: white;
+}
+
+
+.wd-search-bar {
+    background-color: rgba(8, 9, 9, 0.32);
+    border-color: white;
+}
+
+.wd-search-icon {
+    bottom: 8px;
+    left: 20px;
+    color: white;
+}
+
+.wd-cog {
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+.wd-active {
+    border-bottom: 5px solid #09ccee;
+}
+
+.wd-nav-color {
+    color: darkgrey;
+}
+
+.wd-font-weight {
+    font-weight: bold;
+}
+.wd-middlebox-border {
+    border-left-color: ghostwhite;
+}
+
+.wd-profile-pic-container {
+    float:left;
+    background-color: darkgray;
+}
+
+.wd-left-active {
+    font-weight: bold;
+}
+
+.wd-rounded-image {
+    border-radius: 50%;
+}
