@@ -1,9 +1,11 @@
-const NavigationSidebar = () => {
+const NavigationSidebar = (active) => {
     return(`
    <div class="list-group">
      <a class="list-group-item" href="/">
        <i class="fab fa-twitter"></i></a>
-     <a href="home.html" class="list-group-item list-group-item-action">
+     
+     ${active === 'home' ? `<a href="../HomeScreen/index.html" class="list-group-item list-group-item-action active">` :
+        `<a href="../HomeScreen/index.html" class="list-group-item list-group-item-action">`}
         <div class="row">
             <div class="col-1">
                 <i class="fa fa-home"></i>
@@ -14,7 +16,8 @@ const NavigationSidebar = () => {
         </div>
      </a>
      
-     <a href="explore.html" class="list-group-item list-group-item-action active">
+     ${active === 'explore' ? `<a href="../explore/index.html" class="list-group-item list-group-item-action active">` :
+        `<a href="../explore/index.html" class="list-group-item list-group-item-action">`}
         <div class="row">
             <div class="col-1">
                 <i class="fas fa-hashtag"></i>
@@ -25,7 +28,7 @@ const NavigationSidebar = () => {
         </div>
     </a>
 
-    <a href="notification.html" class="list-group-item list-group-item-action">
+    <a href="notification.html" class="list-group-item">
         <div class="row">
             <div class="col-1">
                 <i class="fas fa-bell"></i>
@@ -90,9 +93,7 @@ const NavigationSidebar = () => {
             </div>
         </div>
     </a>
-     
-       <!-- continue rest of list, e.g.,
-            Home, Explore, Notifications,  Messages, etc. -->
+    
    </div>
    <div class="d-grid mt-2">
      <a href="tweet.html"

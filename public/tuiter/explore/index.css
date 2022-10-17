@@ -19,20 +19,21 @@
 /*    !*border-color: black;*!*/
 /*}*/
 
-/*.wd-search-icon {*/
-/*    bottom: 8px;*/
-/*    left: 20px;*/
-/*}*/
+.wd-search-icon {
+    bottom: 6px;
+    left: 22px;
+}
 
 /*.wd-search-icon2 {*/
 /*    color: grey;*/
 /*}*/
 
-/*.wd-cog {*/
-/*    color: #5bc0de;*/
-/*    width: 30px;*/
-/*    height: 30px;*/
-/*}*/
+.wd-cog {
+    color: #5bc0de;
+    width: 30px;
+    height: 30px;
+}
+
 /*!*.wd-active {*!*/
 /*!*    border-bottom: 5px solid #09ccee;*!*/
 /*!*}*!*/

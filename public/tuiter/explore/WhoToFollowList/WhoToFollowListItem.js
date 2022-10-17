@@ -8,10 +8,10 @@ const WhoToFollowListItem = (avatarIcon, userName, handle) => {
                 <div class="col">
                     <span class="font-weight-bold">${userName}</span>
                     <i class="fas fa-check-circle"></i>
-                    <div class="text-secondary">${handle}</div>
+                    <div>${handle}</div>
                 </div>
                 <div class="col">
-                    <button type="button" class="btn btn-info rounded-pill text-white">Follow</button>
+                    <button type="button" class="btn btn-primary rounded-pill text-white">Follow</button>
                 </div>
             </div>
         </li>
