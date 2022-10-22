@@ -8,7 +8,10 @@ const NavigationSidebar = () => {
     const active = paths[2];
     return (
         <div className="list-group">
-            <a className="list-group-item">Tuiter</a>
+            <Link to="/tuiter/home" className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
+                Tuiter
+            </Link>
+            {/*<a className="list-group-item">Tuiter</a>*/}
             <Link to="/tuiter/home" className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
                 <div className="row">
                     <div className="col-1">
@@ -39,7 +42,7 @@ const NavigationSidebar = () => {
                     </div>
                 </div>
             </Link>
-            <Link to="/tuiter/notifications" className={`list-group-item ${active === 'notifications' ? 'active' : ''}`}>
+            <Link to="/" className={`list-group-item ${active === 'notifications' ? 'active' : ''}`}>
                 <div className="row">
                     <div className="col-1">
                         <i className="fas fa-bell"></i>
@@ -49,7 +52,7 @@ const NavigationSidebar = () => {
                     </div>
                 </div>
             </Link>
-            <Link to="/tuiter/messages" className={`list-group-item ${active === 'messages' ? 'active' : ''}`}>
+            <Link to="/" className={`list-group-item ${active === 'messages' ? 'active' : ''}`}>
                 <div className="row">
                     <div className="col-1">
                         <i className="fas fa-envelope"></i>
@@ -59,7 +62,7 @@ const NavigationSidebar = () => {
                     </div>
                 </div>
             </Link>
-            <Link to="/tuiter/bookmarks" className={`list-group-item ${active === 'bookmarks' ? 'active' : ''}`}>
+            <Link to="/" className={`list-group-item ${active === 'bookmarks' ? 'active' : ''}`}>
                 <div className="row">
                     <div className="col-1">
                         <i className="fas fa-bookmark"></i>
@@ -69,7 +72,7 @@ const NavigationSidebar = () => {
                     </div>
                 </div>
             </Link>
-            <Link to="/tuiter/lists" className={`list-group-item ${active === 'lists' ? 'active' : ''}`}>
+            <Link to="/" className={`list-group-item ${active === 'lists' ? 'active' : ''}`}>
                 <div className="row">
                     <div className="col-1">
                         <i className="fas fa-list"></i>
@@ -79,7 +82,7 @@ const NavigationSidebar = () => {
                     </div>
                 </div>
             </Link>
-            <Link to="/tuiter/profile" className={`list-group-item ${active === 'notifications' ? 'active' : ''}`}>
+            <Link to="/" className={`list-group-item ${active === 'notifications' ? 'active' : ''}`}>
                 <div className="row">
                     <div className="col-1">
                         <i className="fas fa-user"></i>
@@ -89,7 +92,7 @@ const NavigationSidebar = () => {
                     </div>
                 </div>
             </Link>
-            <Link to="/tuiter/more" className={`list-group-item ${active === 'notifications' ? 'active' : ''}`}>
+            <Link to="/" className={`list-group-item ${active === 'notifications' ? 'active' : ''}`}>
                 <div className="row">
                     <div className="col-1">
                         <i className="fas fa-comment-dots"></i>

@@ -21,7 +21,7 @@ const FullPostItem = (
         <li className="list-group-item">
             <div className="row">
                 <div className="col-1">
-                    <img className="rounded-circle" src={`/images/${post.avatar}`} width={48} height={48}/>
+                    <img className="rounded-circle" alt="" src={`/images/${post.avatar}`} width={48} height={48}/>
                 </div>
 
                 <div className="col-11">
@@ -33,7 +33,7 @@ const FullPostItem = (
                     <div>{post.description}</div>
 
                     <div className="border border-dark rounded">
-                        <img className="border-bottom col-12" src={`/images/${post.image}`} width={504} height={264}/>
+                        <img className="border-bottom col-12" alt="" src={`/images/${post.image}`} width={504} height={264}/>
                             <div>{post.imageTitle}</div>
                             <div className="text-dark">{post.imageContent}</div>
                     </div>
