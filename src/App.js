@@ -1,5 +1,4 @@
 import './App.css';
-import Assignment6 from "./labs/a6/index.js";
 import Tuiter from "./tuiter";
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
