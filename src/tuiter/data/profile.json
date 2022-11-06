@@ -1,0 +1,15 @@
+{
+  "_id": 123,
+  "firstName": "Chloe",
+  "lastName": "Huang",
+  "handle": "@chloe",
+  "profilePicture": "https://pbs.twimg.com/profile_images/1407528509170401280/B7uaH6fC_400x400.jpg",
+  "bannerPicture": "https://media.istockphoto.com/vectors/kawaii-bubble-tea-collection-vector-illustration-vector-id1286337359?k=20&m=1286337359&s=612x612&w=0&h=JK5JHsdrSsvnuUjlrHx-5exiRNrz-TmDdhEUX5pggJQ=",
+  "bio": "Student, Software Engineer, Movie Lover",
+  "website": "youtube.com/webdevtv",
+  "location": "Seattle, WA",
+  "dateOfBirth": "1/9/1998",
+  "dateJoined": "5/2017",
+  "followingCount": 340,
+  "followersCount": 223
+}
