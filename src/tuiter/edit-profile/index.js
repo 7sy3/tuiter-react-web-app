@@ -67,7 +67,7 @@ const EditProfileComponent = () => {
 
             <div className="wd-image">
                 <img className="wd-banner-pic w-100" alt="" src={profile.bannerPicture} height={200}/>
-                <h1></h1>
+                <h1> </h1>
                 <img className="wd-profile-pic-2 rounded-circle" alt="" src={profile.profilePicture} width={100}
                      height={100}/>
             </div>
@@ -102,7 +102,7 @@ const EditProfileComponent = () => {
 
                 <div class="form-group">
                     <label for="date">Date Of Birth</label>
-                    <input type="date" id="date" type="text" class="form-control" placeholder={profile.dateOfBirth} onChange={(event) => updateDateOfBirth(event.target.value)}/>
+                    <input id="date" type="text" class="form-control" placeholder={profile.dateOfBirth} onChange={(event) => updateDateOfBirth(event.target.value)}/>
                 </div>
             </form>
         </>
