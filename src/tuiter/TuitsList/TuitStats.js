@@ -19,27 +19,25 @@ const TuitStats = ({tuit}) => {
                 </div>
 
                 <div className="col-3">
-                    Likes: {tuit.likes}
                     <i className="bi bi-heart-fill me-2 text-danger" onClick={() => dispatch(updateTuitThunk({
                         ...tuit,
                         likes: tuit.likes + 1
                     }))}></i>
-
+                    {tuit.likes}
                     {/*<i className="text-red fa fa-heart wd-icon-like"></i>*/}
                     {/*<span className="text-dark">{tuit.likes}</span>*/}
                 </div>
 
-                <div className="col-3">
-                    Dislikes: {tuit.dislikes}
+                <div className="col-4">
                     <i className="fa fa-thumbs-down me-2" onClick={() => dispatch(updateTuitThunk({
                             ...tuit,
                             dislikes: tuit.dislikes - 1
-                        }))}
-                       ></i>
+                        }))}></i>
+                    {tuit.dislikes}
                     {/*<span className="text-dark">{tuit.dislikes}</span>*/}
                 </div>
 
-                <div className="col-2">
+                <div className="col-1">
                     <i className="text-dark fa fa-upload"></i>
                 </div>
             </div>

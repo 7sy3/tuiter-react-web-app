@@ -31,7 +31,7 @@ const TuitListItem = (
                     <img className="rounded-circle" alt="" src={`/images/${tuit.avatar}`} width={48} height={48}/>
                 </div>
 
-                <div className="col-11">
+                <div className="col-10">
                     <span><strong>{tuit.userName}</strong></span>
                     <i className="fas fa-check-circle"></i>
                     <span className="text-dark">{tuit.handle}</span>
@@ -39,7 +39,7 @@ const TuitListItem = (
                     <span className="text-dark">{tuit.time}</span>
                     <i className="bi bi-x-lg float-end"
                        onClick={() => deleteTuitHandler(tuit._id)}></i>
-                    <div>{tuit.tuits}</div>
+                    <div>{tuit.tuit}</div>
 
                     <div className="row mt-3 mb-2">
                         <TuitStats key={tuit._id} tuit={tuit}/>

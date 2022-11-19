@@ -3,14 +3,14 @@ import tuits from '../data/tuits.json';
 import {createTuitThunk, findTuitsThunk, deleteTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
 
 const currentUser = {
-    "userName": "NASA",
+    "username": "NASA",
     "handle": "@nasa",
-    "avatar": "nasa.png",
+    "avatar": "space.png",
 };
 
 const templateTuit = {
     ...currentUser,
-    "tuits": "Space",
+    "tuit": "Space",
     "time": "2h",
     "liked": false,
     "replies": 0,
@@ -51,7 +51,12 @@ const tuitsSlice = createSlice({
         [createTuitThunk.fulfilled]:
             (state, {payload}) => {
                 state.loading = false
-                state.tuits.push(payload)
+                console.log(payload)
+                state.tuits.push({
+                    ...templateTuit,
+                    ...payload,
+                    _id: (new Date()).getTime(),
+                })
             },
         [updateTuitThunk.fulfilled]:
             (state, {payload}) => {
