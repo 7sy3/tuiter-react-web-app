@@ -1,5 +1,5 @@
 import Nav from "../../nav";
-
+import React from 'react';
 function HelloWorld() {
     return(
         <div>

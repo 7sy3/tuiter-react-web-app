@@ -1,7 +1,7 @@
 import Classes from "./classes";
 import Styles from "./styles";
 import ConditionalOutput from "./conditional-output-if-else";
-
+import React from "react";
 function Assignment6() {
     return(
         <div>
