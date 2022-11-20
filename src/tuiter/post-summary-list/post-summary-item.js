@@ -20,7 +20,8 @@ const PostSummaryItem = ({post}) => {
                     <img
                         width={70}
                         className="float-end"
-                        src={`/images/java.png`}></img>
+                        src={`/images/java.png`}
+                        alt="icon not found"></img>
                 </div>
             </div>
         </li>
