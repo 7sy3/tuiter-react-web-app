@@ -10,7 +10,7 @@ const currentUser = {
 
 const templateTuit = {
     ...currentUser,
-    "tuit": "Space",
+    "tuit": "space",
     "time": "2h",
     "liked": false,
     "replies": 0,
